@@ -3,3 +3,7 @@ function ToggleVisibility(){
 
     element.classList.toggle('hidden')
 }
+
+function ToggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+}
