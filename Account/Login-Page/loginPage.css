@@ -18,6 +18,12 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  
+}
+
+.hidden{
+  display: none;
 }
 
 main {
@@ -39,14 +45,16 @@ h1 {
 .info {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .loginInfo {
+
   border: none;
   margin-bottom: 15px;
   padding: 8px;
   padding-left: 20px;
-  height: 6vh;
+  height: 8vh;
   width: 24vw;
   border-radius: 5px;
   font-size: 25px;
@@ -62,12 +70,21 @@ h1 {
   transform: translateY(-50%);
 }
 
+#password{
+  margin-bottom: 0;
+}
+
+.error{
+  margin-bottom: 15px;
+  color: #1e1e27;
+}
+
 .loginButton {
   border: none;
-  margin-top: 15px;
-  padding: 10px;
-  width: 20vw;
-  height: 9vh;
+  margin: 15px 0;
+  padding: 8px;
+  width: 26.5vw;
+  height: 10vh;
   border-radius: 5px;
   background-color: #1e1e27;
   text-transform: uppercase;
@@ -79,14 +96,13 @@ h1 {
 .sideText {
   display: flex;
   white-space: nowrap;
-  margin-top: 10px;
-  margin-bottom: 5px;
   align-items: center;
   justify-content: space-between;
+  gap: 50px;
 }
 
 .remember {
-  padding: 10px;
+  padding: 5px;
   color: #e2e2e2;
   margin: 0;
 }
@@ -97,10 +113,11 @@ h1 {
   padding: 10px;
 }
 #rememberButton {
-  padding: 10px;
+  padding: 5px;
 }
 
 h2 {
+  margin-bottom: 4px;
   color: #fff;
   font-size: 20px;
 }
@@ -116,16 +133,28 @@ h2 {
   align-items: center;
   border: none;
   border-radius: 50%;
-  margin: 8px 8px;
+  margin: 4px 8px;
   width: 60px;
 }
 
 .signUp {
+  margin-top: 5vh;
   color: #e2e2e2;
   display: flex;
-  cursor: pointer;
-  margin: 3vh 0;
+  cursor: pointer;  
+  align-self: center;
+  font-size: 25px;
 }
+
+@media (max-width: 1339px){
+  .sideText{
+    gap: 10px;
+  }
+  .error{
+  font-size: 13px;
+}
+}
+
 
 /* <900px */
 
@@ -137,10 +166,15 @@ h2 {
   .sideText {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 15px 0;
+    gap: 0;
     padding: 0;
     padding: 10px;
     font-size: 30px;
+  }
+
+    .error{
+  font-size: 15px;
   }
 
   .loginInfo {
@@ -153,8 +187,7 @@ h2 {
   }
 
   .loginButton {
-    margin: 0;
-    width: 35vw;
+    width: 36.5vw;
   }
 
   .fastLogin {
@@ -181,13 +214,16 @@ h2 {
     padding: 10px;
   }
 
+  .error{
+    font-size: 15px;
+  }
+
   .loginInfo {
     width: 50vw;
   }
 
   .loginButton {
-    margin: 0;
-    width: 50vw;
+    width: 54.5vw;
   }
 
   h1 {
@@ -215,17 +251,21 @@ h2 {
     font-size: 25px;
   }
 
+  .error{
+    font-size: 15px;
+  }
+
   .loginInfo::placeholder {
     font-size: 25px;
   }
 
   .loginButton {
-    width: 80vw;
+    width: 86vw;
     height: 9vh;
   }
 
   .sideText {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .signUp {

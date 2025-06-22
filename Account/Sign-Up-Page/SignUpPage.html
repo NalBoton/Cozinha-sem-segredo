@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="../Login-Page/loginPage.css">
+</head>
+<body>
+    <main>
+        <h1>Cadastre-se</h1>
+        
+
+        <div class="info">
+            <input class="loginInfo" id="email" type="email" placeholder="Digite seu email">
+            <p class="error" id="invalidEmail" style="display: none;">emails devem seguir o formato: email@email.com</p>
+            <input class="loginInfo" id="password" type="password" placeholder="Crie sua senha">
+        </div>
+
+        <button class="loginButton" onclick="EmailValid()">Criar</button>
+        <h2>Ou Entre Usando:</h2>
+        <div class="LoginForms">
+            <input class="fastLogin" id="facebook" type="image" src="../Login-Page/logos/facebook_logo.svg"></input>
+            <input class="fastLogin" id="google" type="image" src="../Login-Page/logos/google_logo.svg"></input>
+        </div>
+
+        <a class="signUp" class="remember" href="../Login-Page/loginPage.html">Login</a>
+    </main>
+</body>
+<script src="script/emailValidation.js"></script>
+</html>
