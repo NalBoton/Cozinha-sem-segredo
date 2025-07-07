@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reiceitas</title>
+
+    <link rel="stylesheet" href="../defaultStyle/default.css">
+    <link rel="stylesheet" href="receita.css">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+
+      <div class="utilities hover hidden" id="back" onclick="ToggleSearchVisibility()">
+        <span class="material-symbols-outlined">arrow_back</span>
+      </div>
+
+      <div class="utilities hover" id="menu" onclick="ToggleVisibility()">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+
+      <div class="search-bar" id="search-bar">
+        <input type="text" placeholder="Pesquisar" id="search-input"/>
+        <button><span class="material-symbols-outlined" style="color: black;">search</span></button>
+      </div>
+
+      <div class="right-items">
+        <button class="search-button hidden" id="search-button" onclick="ToggleSearchVisibility()"><span class="material-symbols-outlined" >search</span></button>
+
+        <div class="perfil-items">
+          <a href="Account/Login-Page/loginPage.html">
+            <div class="header-conteiner hover">
+              <span class="material-symbols-outlined"> account_circle </span>
+              <span>Fazer Login</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <aside id="aside" class="hidden">
+        <a href="dicas.html" class="aside-item">
+          <div class="aside-conteiner">
+            <span class="material-symbols-outlined"> lightbulb_2 </span>
+            <span>Dicas</span>
+          </div>
+        </a>
+
+        <a href="adicionar-receita.html" class="aside-item">
+          <div class="aside-conteiner">
+            <span class="material-symbols-outlined"> add </span>
+            <span>Adicionar receita</span>
+          </div>
+        </a>
+
+        <a href="perfil.html" class="aside-item">
+          <div class="aside-conteiner">
+            <span class="material-symbols-outlined"> account_circle </span>
+            <span>Perfil</span>
+          </div>
+        </a>
+
+        <a class="aside-item" onclick="ToggleDarkMode()">
+          <div class="aside-conteiner">
+            <span class="material-symbols-outlined">dark_mode</span>
+            <span>Dark Mode</span>
+          </div>
+        </a>
+
+        <a href="sobre/sobre-nos.html" class="aside-item">
+          <div class="aside-conteiner">
+            <span>Sobre nós</span>
+          </div>
+        </a>
+      </aside>
+
+      <main>
+
+        <div class="content">
+            <div class="video"></div>
+
+            <h1 class="title">Título</h1>
+
+            <div class="feedback">
+                <div class="good feedbackElement" ></div>
+                <div class="ok feedbackElement"></div>
+                <div class="bad feedbackElement"></div>
+                <div class="favorite feedbackElement"></div>
+            </div>
+        </div>
+
+      </main>
+
+
+</body>
+
+<script src="../index.js"></script>
+
+</html>

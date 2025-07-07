@@ -1,0 +1,25 @@
+aside{
+    position: fixed;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.video{ 
+    background-color: black;
+    width: 55vw;
+    aspect-ratio: 16 / 9;
+}
+
+.title{
+    margin-top: 15px;
+}
+
+.feedbackElement{
+    background-color: black;
+    width: 10vw;
+    aspect-ratio: 1 / 1;
+}
